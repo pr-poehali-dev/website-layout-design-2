@@ -37,17 +37,17 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-slate-50">
+    <section id="services" className="py-20 bg-black">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-800 rounded-2xl mb-6">
-            <Icon name="Sparkles" size={28} className="text-white" />
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-yellow-500 rounded-2xl mb-6">
+            <Icon name="Sparkles" size={28} className="text-black" />
           </div>
-          <h2 className="font-montserrat font-bold text-4xl md:text-5xl text-gray-900 mb-6">
+          <h2 className="font-montserrat font-bold text-4xl md:text-5xl text-white mb-6">
             Наши услуги
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Полный спектр услуг по разработке — от простых сайтов до сложных
             корпоративных систем
           </p>
@@ -58,22 +58,12 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className={`group relative rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-white/20 overflow-hidden ${
-                index % 2 === 0 ? "bg-amber-800" : "bg-blue-900"
-              }`}
+              className="group relative rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-white/20 overflow-hidden bg-blue-900"
             >
-              {/* Removed gradient background overlay */}
-
-              {/* Removed animated border */}
-
               <div className="relative z-10">
                 {/* Icon */}
-                <div
-                  className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg ${
-                    index % 2 === 0 ? "bg-blue-900" : "bg-amber-800"
-                  }`}
-                >
-                  <Icon name={service.icon} size={28} className="text-white" />
+                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg bg-yellow-500">
+                  <Icon name={service.icon} size={28} className="text-black" />
                 </div>
 
                 {/* Title */}
